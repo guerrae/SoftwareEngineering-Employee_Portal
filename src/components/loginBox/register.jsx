@@ -1,23 +1,25 @@
 import React from "react";
-import loginImg from "../../login.svg"
+import loginImg from "../../login.jpg"
 
-export class register extends React.Component{
+export class Register extends React.Component{
     constructor(props){
         super(props);
     }
     render(){
-        return <div className = "base-container">
+        return <div className = "base-container" ref = {this.props.containerRef}>
             <div className = "header">Register</div>
             <div className = "content">
                 <div className="image">
-                    <img src = {loginImg} alt = "Register"/>
+                    <img className="img" src = {loginImg} alt = "Register"/>
                 </div>
-                <div className="form">
-                    <div className="form-group">
+                <div className="formUserName">
+                    <div className="form-groupA">
                         <label htmlFor="username">Username</label>
                         <input type="text" name = "username" placeholder = "username"/>
                     </div>
-                    <div className="form-group">
+                </div>
+                <div className="formPassword">
+                    <div className="form-groupB">
                         <label htmlFor="password">Password</label>
                         <input type="password" name = "password" placeholder = "password"/>
                     </div>
