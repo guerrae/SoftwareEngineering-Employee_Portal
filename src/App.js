@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Route, BrowserRouter as Router, Switch} from "react-router-dom";
+import {Route, HashRouter as Router, Switch} from "react-router-dom";
 
 //import pages
 import Home from "./Pages/Home";
@@ -24,8 +24,8 @@ export default class App extends Component {
       <div>
       <Router>
         <Switch>
-          <Route path = "/SoftwareEngineering-Employee_Portal/" exact component = {Home}/>
-          <Route path = "/SoftwareEngineering-Employee_Portal/Dashboard" component = {Dashboard}/>
+          <Route path = "/" exact component = {Home}/>
+          <Route path = "/Dashboard" component = {Dashboard}/>
           <Route path = "/exLinks" component = {exLinks}/>
           <Route path = "/adminPage" component = {adminPage}/>
           <Route path = "*" component = {tempPage}/>
