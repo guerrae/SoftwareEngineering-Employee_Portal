@@ -8,7 +8,8 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
-import hrImg from "./hrLogo.png" //w330 h291
+import hrImg from "./hrLogo.png"; //w330 h291
+import {Link} from "react-router-dom";
 
 const theme = createMuiTheme({
   palette: {
@@ -70,29 +71,39 @@ export default function MediaCard() {
       <CardActions className={classes.cardActions}>
         <ThemeProvider theme={theme}>
           <div className={classes.button}>
-            <Button  variant="contained" size="small" color="primary" href="/exLinks">
-            New Hire On-boarding
-            </Button>
+            <Link href="/exLinks">
+              <Button  variant="contained" size="small" color="primary">
+                New Hire On-boarding
+              </Button>
+            </Link>
           </div>
           <div className={classes.button}>
-            <Button  variant="contained" size="small" color="primary" href="/exLinks">
-              Benefits
-            </Button>
+            <Link href="/exLinks">
+              <Button  variant="contained" size="small" color="primary">
+                Benefits
+              </Button>
+            </Link>
           </div>
           <div className={classes.button}>
-            <Button  variant="contained" size="small" color="primary" href="/exLinks">
-              Payroll
-            </Button>
+            <Link href="/exLinks">
+              <Button  variant="contained" size="small" color="primary">
+                Payroll
+              </Button>
+            </Link>
           </div>
           <div className={classes.button}>
-            <Button variant="contained"size="small" color="primary" href="/exLinks">
-              Off-boarding
-            </Button>
+            <Link href="/exLinks">
+              <Button variant="contained"size="small" color="primary">
+                Off-boarding
+              </Button>
+            </Link>
           </div>
           <div className={classes.button}>
-            <Button variant="contained"size="small" color="primary" href="/exLinks">
-              HR Reports
-            </Button>
+            <Link href="/exLinks">
+              <Button variant="contained"size="small" color="primary">
+                HR Reports
+              </Button>
+            </Link>
           </div>
         </ThemeProvider>
       </CardActions>

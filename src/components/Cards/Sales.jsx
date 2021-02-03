@@ -9,6 +9,7 @@ import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import salesImg from "./salesLogo.png"//w200 h200
+import {Link} from "react-router-dom";
 
 const theme = createMuiTheme({
   palette: {
@@ -70,19 +71,25 @@ export default function MediaCard() {
       <CardActions className={classes.cardActions}>
         <ThemeProvider theme={theme}>
           <div className={classes.button}>
-            <Button  variant="contained" size="small" color="primary" href="/exLinks">
-              Sales Reports
-            </Button>
+            <Link href="/exLinks">
+              <Button  variant="contained" size="small" color="primary">
+                Sales Reports
+              </Button>
+            </Link>
           </div>
           <div className={classes.button}>
-            <Button  variant="contained" size="small" color="primary" href="/exLinks">
-              Sales Leads
-            </Button>
+            <Link href="/exLinks">
+              <Button  variant="contained" size="small" color="primary">
+                Sales Leads
+              </Button>
+            </Link>
           </div>
           <div className={classes.button}>
-            <Button  variant="contained" size="small" color="primary" href="/exLinks">
-              Sales Demo
-            </Button>
+            <Link href="/exLinks">
+              <Button  variant="contained" size="small" color="primary">
+                Sales Demo
+              </Button>
+            </Link>
           </div>
         </ThemeProvider>
       </CardActions>

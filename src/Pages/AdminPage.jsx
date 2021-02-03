@@ -4,6 +4,7 @@ import {Nav} from "../components/NavBar/index";
 import Modal from "react-modal";
 import Button from '@material-ui/core/Button';
 import {makeStyles} from '@material-ui/core/styles';
+import {Link} from 'react-router-dom';
 
 Modal.setAppElement('#root');
 
@@ -99,7 +100,7 @@ const TempPage = () => {
                 </tbody>
             </table>
             <div style={{marginTop: '2rem', display: 'flex', justifyContent: 'center', alignContent: 'center'}}>
-                <Button className={classes.button} variant="contained" size="small" href="/Dashboard" >
+                <Button className={classes.button} variant="contained" size="small" component={Link} to="/Dashboard">
                   Return to Dashboard
                 </Button>
             </div>

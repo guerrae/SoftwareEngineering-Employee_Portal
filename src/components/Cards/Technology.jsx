@@ -9,6 +9,7 @@ import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import techImg from "./technologyLogo.png"//w512 h422
+import {Link} from "react-router-dom;"
 
 const theme = createMuiTheme({
   palette: {
@@ -71,27 +72,27 @@ export default function MediaCard() {
       <CardActions className={classes.cardActions}>
         <ThemeProvider theme={theme}>
           <div className={classes.button}>
-            <Button  variant="contained" size="small" color="primary" href="/exLinks">
+            <Button  variant="contained" size="small" color="primary" component={Link} to="/exLinks">
               Application Monitoring
             </Button>
           </div>
           <div className={classes.button}>
-            <Button  variant="contained" size="small" color="primary" href="/exLinks">
+            <Button  variant="contained" size="small" color="primary" component={Link} to="/exLinks">
               Tech Support
             </Button>
           </div>
           <div className={classes.button}>
-            <Button  variant="contained" size="small" color="primary" href="/exLinks">
+            <Button  variant="contained" size="small" color="primary" component={Link} to="/exLinks">
               App Development
             </Button>
           </div>
           <div className={classes.button}>
-            <Button variant="contained"size="small" color="primary" href="/exLinks">
+            <Button variant="contained"size="small" color="primary" component={Link} to="/exLinks">
               App Admin
             </Button>
           </div>
           <div className={classes.button}>
-            <Button variant="contained"size="small" color="primary" href="/exLinks">
+            <Button variant="contained"size="small" color="primary" component={Link} to="/exLinks">
               Release Management
             </Button>
           </div>

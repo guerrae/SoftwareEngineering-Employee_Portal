@@ -6,7 +6,7 @@ import Home from "./Pages/Home";
 import Dashboard from "./Pages/Dashboard";
 import exLinks from "./Pages/externalLinks";
 import adminPage from "./Pages/AdminPage";
-//import tempPage from "./Pages/tempPage";
+import tempPage from "./Pages/tempPage";
 
 //localStorage.setItem('isAuth', false);
 
@@ -24,11 +24,11 @@ export default class App extends Component {
       <div>
       <Router>
         <Switch>
-          <Route path = "/" exact component = {Home}/>
-          <Route path = "/Dashboard" component = {Dashboard}/>
+          <Route path = "/SoftwareEngineering-Employee_Portal/" exact component = {Home}/>
+          <Route path = "/SoftwareEngineering-Employee_Portal/Dashboard" component = {Dashboard}/>
           <Route path = "/exLinks" component = {exLinks}/>
           <Route path = "/adminPage" component = {adminPage}/>
-          <Route path = "*" component = {Home}/>
+          <Route path = "*" component = {tempPage}/>
         </Switch>
       </Router>
       </div>
