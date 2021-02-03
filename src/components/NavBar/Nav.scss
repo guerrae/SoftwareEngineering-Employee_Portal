@@ -7,9 +7,9 @@
     right: 0;
     background: #24292e;//#3e3b39
     height: 90px;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
+    //display: flex;
+    //flex-direction: row;
+    //align-items: flex-start;
     padding: 0px 0px;
 }
 
@@ -20,7 +20,8 @@
 
 .content{
     display: flex;
-    flex-direction: row;
+    //flex-direction: row;
+    justify-content: space-between;
 }
 
 .image{
@@ -40,10 +41,16 @@
 
 .link{
     text-decoration: none;//removes underline
-    display: inline;
-    margin-left: 55em;
+    //display: inline;
+    //margin-left: 55em;
     color: white;
     font-weight: bold;
     cursor: pointer;
     &:hover{color: gray;}
+}
+
+.logout{
+    justify-self: self-end;
+    justify-content: flex-end;
+    margin-right: 20px;
 }

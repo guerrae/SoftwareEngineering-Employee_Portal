@@ -8,6 +8,9 @@ const customTheme = createMuiTheme({
     secondary: {
       main: "#424242",
     },
+    action: {
+      hover: "#d32f2f"
+    }
   },
 });
 

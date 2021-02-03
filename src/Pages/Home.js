@@ -6,7 +6,7 @@ class Home extends React.Component{
     constructor(props){
       super(props);
         this.state = {
-          isLoginActive: true
+          activeHomeCard: true,
         };
     }
   
@@ -16,9 +16,9 @@ class Home extends React.Component{
     }
   
     changeState(){
-      const {isLoginActive} = this.state;
+      const {activeHomeCard} = this.state;
   
-      if(isLoginActive){
+      if(activeHomeCard){
         this.registerRight.classList.remove("right");
         this.registerRight.classList.add("left");
       }
@@ -27,20 +27,20 @@ class Home extends React.Component{
         this.registerRight.classList.add("right");
       }
   
-      this.setState(prevState => ({isLoginActive: !prevState.isLoginActive}));
+      this.setState(prevState => ({activeHomeCard: !prevState.activeHomeCard}));
     }
   
     render(){
-      const {isLoginActive} = this.state;
-      const current = isLoginActive ? "Register" : "Login" ;
-      const currentActive = isLoginActive ? "login" : "register" ;
+      const {activeHomeCard} = this.state;
+      const current = activeHomeCard ? "Register" : "Login" ;
+      const currentActive = activeHomeCard ? "login" : "register" ;
   
       return(
         <div className="Home">
           <div className="login">
             <div className="container">
-              {isLoginActive && <Login containerRef={(ref) => this.current = ref}/>}
-              {!isLoginActive && <Register containerRef={(ref) => this.current = ref}/>}
+              {activeHomeCard && <Login containerRef={(ref) => this.current = ref}/>}
+              {!activeHomeCard && <Register containerRef={(ref) => this.current = ref}/>}
             </div>
               <RegisterRight current={current} currentActive={currentActive} containerRef={ref => (this.registerRight = ref)} onClick={this.changeState.bind(this)}/>
           </div>

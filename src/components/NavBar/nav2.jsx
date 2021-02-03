@@ -2,7 +2,7 @@ import React from "react";
 import navImg from "../../SE_img.png"
 import {Link} from "react-router-dom";
 
-export class Nav extends React.Component{
+export class Nav2 extends React.Component{
     render(){
         return <nav className = "nav-container">
                 <div className = "header">
@@ -13,7 +13,7 @@ export class Nav extends React.Component{
                         <div className="logout">
                             <nav>
                                 <ul className="unsortList">
-                                    <li><Link to = "/" className="link" onClick={() => localStorage.removeItem('jwt')}>Logout</Link></li>
+                                    <li><Link to = "/" className="link" onClick={() => localStorage.removeItem('jwt')}>{this.props.data}</Link></li>
                                 </ul>
                             </nav>
                         </div>
