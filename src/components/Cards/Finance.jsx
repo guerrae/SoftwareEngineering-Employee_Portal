@@ -10,6 +10,7 @@ import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import financeImg from "./financeLogo.png";//w980 h882
+import {Link} from "react-router-dom";
 
 const theme = createMuiTheme({
   palette: {
@@ -73,24 +74,32 @@ export default function MediaCard() {
       <CardActions className={classes.cardActions}>
         <ThemeProvider theme={theme}>
           <div className={classes.button}>
-            <Button variant="contained" size="small" color="primary" href="/exLinks">
-              Finance Reports
-            </Button>
+            <Link to="/exLinks">
+              <Button variant="contained" size="small" color="primary">
+                Finance Reports
+              </Button>
+            </Link>
           </div>
           <div className={classes.button}>
-            <Button  variant="contained" size="small" color="primary" href="/exLinks">
-              Accounts Payable
-            </Button>
+            <Link to="/exLinks">
+              <Button  variant="contained" size="small" color="primary">
+                Accounts Payable
+              </Button>
+            </Link>
           </div>
           <div className={classes.button}>
-            <Button  variant="contained" size="small" color="primary" href="/exLinks">
-              Accounts Receivable
-            </Button>
+            <Link to="/exLinks">
+              <Button  variant="contained" size="small" color="primary">
+                Accounts Receivable
+              </Button>
+            </Link>
           </div>
           <div className={classes.button}>
-            <Button variant="contained"size="small" color="primary" href="/exLinks">
-              Tax
-            </Button>
+            <Link to="/exLinks">
+              <Button variant="contained"size="small" color="primary">
+                Tax
+              </Button>
+            </Link>
           </div>
         </ThemeProvider>
       </CardActions>
