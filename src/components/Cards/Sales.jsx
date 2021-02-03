@@ -71,25 +71,19 @@ export default function MediaCard() {
       <CardActions className={classes.cardActions}>
         <ThemeProvider theme={theme}>
           <div className={classes.button}>
-            <Link href="/exLinks">
-              <Button  variant="contained" size="small" color="primary">
+              <Button  variant="contained" size="small" color="primary" component={Link} to="/exLinks">
                 Sales Reports
               </Button>
-            </Link>
           </div>
           <div className={classes.button}>
-            <Link href="/exLinks">
-              <Button  variant="contained" size="small" color="primary">
+              <Button  variant="contained" size="small" color="primary" component={Link} to="/exLinks">
                 Sales Leads
               </Button>
-            </Link>
           </div>
           <div className={classes.button}>
-            <Link href="/exLinks">
-              <Button  variant="contained" size="small" color="primary">
+              <Button  variant="contained" size="small" color="primary" component={Link} to="/exLinks">
                 Sales Demo
               </Button>
-            </Link>
           </div>
         </ThemeProvider>
       </CardActions>
