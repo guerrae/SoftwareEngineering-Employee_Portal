@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/SoftwareEngineering-Employee_Portal/static/css/main.f0546aa2.chunk.css",
+    "main.js": "/SoftwareEngineering-Employee_Portal/static/js/main.3efa466c.chunk.js",
+    "main.js.map": "/SoftwareEngineering-Employee_Portal/static/js/main.3efa466c.chunk.js.map",
+    "runtime-main.js": "/SoftwareEngineering-Employee_Portal/static/js/runtime-main.5cc6e893.js",
+    "runtime-main.js.map": "/SoftwareEngineering-Employee_Portal/static/js/runtime-main.5cc6e893.js.map",
+    "static/js/2.ded66553.chunk.js": "/SoftwareEngineering-Employee_Portal/static/js/2.ded66553.chunk.js",
+    "static/js/2.ded66553.chunk.js.map": "/SoftwareEngineering-Employee_Portal/static/js/2.ded66553.chunk.js.map",
+    "index.html": "/SoftwareEngineering-Employee_Portal/index.html",
+    "precache-manifest.badb1ac043f0b959bb19b7eb2c57b1d6.js": "/SoftwareEngineering-Employee_Portal/precache-manifest.badb1ac043f0b959bb19b7eb2c57b1d6.js",
+    "service-worker.js": "/SoftwareEngineering-Employee_Portal/service-worker.js",
+    "static/css/main.f0546aa2.chunk.css.map": "/SoftwareEngineering-Employee_Portal/static/css/main.f0546aa2.chunk.css.map",
+    "static/js/2.ded66553.chunk.js.LICENSE.txt": "/SoftwareEngineering-Employee_Portal/static/js/2.ded66553.chunk.js.LICENSE.txt",
+    "static/media/financeLogo.png": "/SoftwareEngineering-Employee_Portal/static/media/financeLogo.eaa1a052.png",
+    "static/media/hrLogo.png": "/SoftwareEngineering-Employee_Portal/static/media/hrLogo.a9b20e2c.png",
+    "static/media/login.jpg": "/SoftwareEngineering-Employee_Portal/static/media/login.73237423.jpg",
+    "static/media/register.png": "/SoftwareEngineering-Employee_Portal/static/media/register.d652b7f5.png",
+    "static/media/supportLogo.jpg": "/SoftwareEngineering-Employee_Portal/static/media/supportLogo.52587fb6.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5cc6e893.js",
+    "static/js/2.ded66553.chunk.js",
+    "static/css/main.f0546aa2.chunk.css",
+    "static/js/main.3efa466c.chunk.js"
+  ]
+}
